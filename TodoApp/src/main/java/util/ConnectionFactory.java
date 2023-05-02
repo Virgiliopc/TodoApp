@@ -1,10 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package util;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
 /**
  *
  * @author virgi
@@ -16,4 +13,22 @@ public class ConnectionFactory {
     public static final String USER = "root";
     public static final String PASS = "";
     
+    public static Connection getConnection() {
+        try {
+            Class.forName(DRIVER);
+            return DriverManager.getConnection(URL, USER, PASS);
+        } catch (Exception ex) {
+            throw new RuntimeException("Erro na conexão com o bando de dados", ex);
+        }
+    }
+    
+    public static void closeConnection(Connection connection) {
+        try {
+            if(connection != null) {
+                connection.close();
+            }
+        } catch (Exception ex){
+            throw new RuntimeException("Erro ao fechar a conexão com o banco de dados");
+        }
+    }
 }
