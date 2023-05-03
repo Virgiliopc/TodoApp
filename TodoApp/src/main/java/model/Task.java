@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
 
 import java.util.Date;
@@ -34,8 +29,9 @@ public class Task {
         this.updatedAt = updatedAt;
     }
     
-    public Task() {
+    public Task() {        
         this.createdAt = new Date();
+        this.updatedAt = new Date();
     }
 
     public int getId() {
@@ -113,6 +109,6 @@ public class Task {
     @Override
     public String toString() {
         return "Task{" + "id=" + id + ", idProject=" + idProject + ", name=" + name + ", description=" + description + ", notes=" + notes + ", isCompleted=" + isCompleted + ", deadline=" + deadline + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + '}';
-    }    
+    }   
     
 }
