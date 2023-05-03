@@ -17,6 +17,7 @@ public class Task {
     private int idProject;
     private String name;
     private String description;
+    private String notes;
     private boolean isCompleted;
     private Date deadline;
     private Date createdAt;
@@ -31,6 +32,10 @@ public class Task {
         this.deadline = deadline;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
+    }
+    
+    public Task() {
+        this.createdAt = new Date();
     }
 
     public int getId() {
@@ -63,6 +68,14 @@ public class Task {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+    
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
     }
 
     public boolean isIsCompleted() {
@@ -99,7 +112,7 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task{" + "id=" + id + ", idProject=" + idProject + ", name=" + name + ", description=" + description + ", isCompleted=" + isCompleted + ", deadline=" + deadline + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + '}';
+        return "Task{" + "id=" + id + ", idProject=" + idProject + ", name=" + name + ", description=" + description + ", notes=" + notes + ", isCompleted=" + isCompleted + ", deadline=" + deadline + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + '}';
     }    
     
 }
