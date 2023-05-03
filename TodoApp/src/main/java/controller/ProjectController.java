@@ -22,7 +22,7 @@ public class ProjectController {
                 + "description, "
                 + "createdAT, "
                 + "updatedAt) "
-                + "VALUES (?, ?, ?, ?, ?)";        
+                + "VALUES (?, ?, ?, ?)";        
 
         Connection connection = null;
         PreparedStatement statement = null;
@@ -38,9 +38,9 @@ public class ProjectController {
             statement.setDate(4, new Date(project.getUpdatedAt().getTime()));
             statement.execute();
         } catch (SQLException ex) {
-            throw new RuntimeException("Erro ao atualizar o projeto", ex);
+            throw new RuntimeException("Erro ao salvar o projeto", ex);
         } finally {
-            ConnectionFactory.closeConnection(connection, statement);
+            ConnectionFactory.closeConnection(connection, statement);            
         }
     }
     
@@ -67,11 +67,11 @@ public class ProjectController {
             statement.setDate(4, new Date(project.getUpdatedAt().getTime()));
             statement.setInt(5, project.getId());
             statement.execute();
-        } catch (Exception ex) {
+        } catch (SQLException ex) {
             throw new RuntimeException("Erro ao atualizar o projeto", ex);
         } finally {
-            ConnectionFactory.closeConnection(connection, statement);
-        }
+            ConnectionFactory.closeConnection(connection, statement);            
+        }   
     }
     
     public List<Project> getAll() {
@@ -104,10 +104,10 @@ public class ProjectController {
                 //Adicioa o projeto a lista de projetos
                 projects.add(project);
             }
-        } catch (Exception ex) {
+        } catch (SQLException ex) {
             throw new RuntimeException("Erro ao buscar o projeto", ex);
         } finally {
-            ConnectionFactory.closeConnection(connection, statement, resultSet);
+            ConnectionFactory.closeConnection(connection, statement, resultSet);            
         }        
         //Lista de tarefas criada e carregada do banco de dados
         return projects;             
@@ -124,10 +124,14 @@ public class ProjectController {
             statement = connection.prepareStatement(sql);
             statement.setInt(1, idProject);
             statement.execute();
-        } catch (Exception ex) {
+        } catch (SQLException ex) {
             throw new RuntimeException("Erro ao deletar o projeto", ex);
         } finally {
             ConnectionFactory.closeConnection(connection, statement);
         }
     }     
+
+    public void getUpdate(Project project) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
