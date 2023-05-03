@@ -24,16 +24,6 @@ public class ConnectionFactory {
         }
     }
     
-    public static void closeConnection(Connection connection) {
-        try {
-            if(connection != null) {
-                connection.close();
-            }
-        } catch (Exception ex){
-            throw new RuntimeException("Erro ao fechar a conexão com o banco de dados");
-        }
-    }
-    
     public static void closeConnection(Connection connection, PreparedStatement statement) {
         try {
             if(connection != null) {
@@ -42,11 +32,11 @@ public class ConnectionFactory {
             
             if(statement != null) {
                 statement.close();
-            }
+            }            
         } catch (Exception ex){
-            throw new RuntimeException("Erro ao fechar a conexão com o banco de dados");
+            throw new RuntimeException("Erro ao fechar a conexão com o banco de dados", ex);
         }
-    }
+    }     
     
     public static void closeConnection(Connection connection, PreparedStatement statement, ResultSet resultSet) {
         try {
@@ -62,7 +52,11 @@ public class ConnectionFactory {
                 resultSet.close();
             }
         } catch (Exception ex){
-            throw new RuntimeException("Erro ao fechar a conexão com o banco de dados");
+            throw new RuntimeException("Erro ao fechar a conexão com o banco de dados", ex);
         }
+    }
+    
+    public static void closeConnection(Connection connection) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }
