@@ -30,8 +30,7 @@ public class Task {
     }
     
     public Task() {        
-        this.createdAt = new Date();
-        this.updatedAt = new Date();
+        this.createdAt = new Date();        
     }
 
     public int getId() {
@@ -108,7 +107,6 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task{" + "id=" + id + ", idProject=" + idProject + ", name=" + name + ", description=" + description + ", notes=" + notes + ", isCompleted=" + isCompleted + ", deadline=" + deadline + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + '}';
-    }   
-    
+        return "Task{" + "id=" + id + ", idProject=" + idProject + ", name=" + name + ", description=" + description + ", notes=" + notes + ", isCompleted=" + isCompleted + ", deadline=" + deadline + ", CreatedAt=" + createdAt + ", updatedAt=" + updatedAt + '}';
+    }       
 }
