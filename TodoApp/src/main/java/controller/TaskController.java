@@ -17,7 +17,14 @@ import util.ConnectionFactory;
 public class TaskController {
 
     public void save(Task task) {
-        String sql = "INSERT INTO tasks (idProject, name, description, completed, deadline, createdAT, updatedAt) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";        
+        String sql = "INSERT INTO tasks (idProject, "
+                + "name, "
+                + "description, "
+                + "completed, "
+                + "deadline, "
+                + "createdAT, "
+                + "updatedAt) "
+                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";        
 
         Connection connection = null;
         PreparedStatement statement = null;
@@ -37,8 +44,7 @@ public class TaskController {
             statement.setDate(8, new Date(task.getUpdatedAt().getTime()));
             statement.execute();
         } catch (Exception ex) {
-            throw new RuntimeException("Erro ao salvar a tarefa"
-                    + ex.getMessage(), ex);
+            throw new RuntimeException("Erro ao salvar a tarefa" + ex.getMessage(), ex);
         } finally {
             ConnectionFactory.closeConnection(connection, statement);
         }
