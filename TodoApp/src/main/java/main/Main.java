@@ -1,4 +1,4 @@
-package TodoApp;
+package main;
 
 import controller.ProjectController;
 import java.sql.Connection;
