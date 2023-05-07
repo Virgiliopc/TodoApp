@@ -315,13 +315,14 @@ public class MainScreen extends javax.swing.JFrame {
     private void jLabelProjectsAddMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelProjectsAddMouseClicked
         // TODO add your handling code here:
         ProjectDialogScreen projectDialogScreen = new ProjectDialogScreen(this, rootPaneCheckingEnabled);
+        //taskDialogScreen.setProject(null);
         projectDialogScreen.setVisible(true);
     }//GEN-LAST:event_jLabelProjectsAddMouseClicked
 
     private void jLabelTasksAddMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelTasksAddMouseClicked
         // TODO add your handling code here:
         TaskDialogScreen taskDialogScreen = new TaskDialogScreen(this, rootPaneCheckingEnabled);
-        taskDialogScreen.setProject(null);
+        //taskDialogScreen.setProject(null);
         
         taskDialogScreen.setVisible(true);
     }//GEN-LAST:event_jLabelTasksAddMouseClicked
