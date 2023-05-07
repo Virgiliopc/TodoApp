@@ -26,7 +26,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanelToolbar" alignment="0" max="32767" attributes="0"/>
+          <Component id="jPanelToolBar" alignment="0" max="32767" attributes="0"/>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanelTask" max="32767" attributes="0"/>
@@ -37,7 +37,7 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="jPanelToolbar" min="-2" max="-2" attributes="0"/>
+              <Component id="jPanelToolBar" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanelTask" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -46,7 +46,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanelToolbar">
+    <Container class="javax.swing.JPanel" name="jPanelToolBar">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="99" red="0" type="rgb"/>
@@ -58,22 +58,22 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabelToobarTitle" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelToolBarTitle" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jLabelToolbarSave" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelToolBarSave" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jLabelToobarTitle" alignment="0" max="32767" attributes="0"/>
-              <Component id="jLabelToolbarSave" alignment="0" pref="53" max="32767" attributes="0"/>
+              <Component id="jLabelToolBarTitle" alignment="0" max="32767" attributes="0"/>
+              <Component id="jLabelToolBarSave" alignment="0" pref="53" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabelToobarTitle">
+        <Component class="javax.swing.JLabel" name="jLabelToolBarTitle">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="18" style="1"/>
@@ -84,7 +84,7 @@
             <Property name="text" type="java.lang.String" value="Tarefa"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabelToolbarSave">
+        <Component class="javax.swing.JLabel" name="jLabelToolBarSave">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -92,7 +92,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabelToolbarSaveMouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabelToolBarSaveMouseClicked"/>
           </Events>
         </Component>
       </SubComponents>
@@ -110,11 +110,11 @@
               <Component id="jTextFieldName" max="32767" attributes="0"/>
               <Component id="jLabelName" alignment="0" max="32767" attributes="0"/>
               <Component id="jTextFieldDescription" alignment="0" pref="380" max="32767" attributes="0"/>
-              <Component id="jLabelDeadline" alignment="0" max="32767" attributes="0"/>
+              <Component id="jLabeldeadline" alignment="0" max="32767" attributes="0"/>
               <Component id="jLabelNotes" alignment="0" max="32767" attributes="0"/>
               <Component id="jScrollPanenotes" alignment="0" max="32767" attributes="0"/>
               <Component id="jLabelDescription" alignment="0" max="32767" attributes="0"/>
-              <Component id="jFormattedTextFieldDeadline" alignment="0" max="32767" attributes="0"/>
+              <Component id="jFormattedTextFielddeadline" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -129,9 +129,9 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jTextFieldDescription" min="-2" pref="137" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                  <Component id="jLabelDeadline" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabeldeadline" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jFormattedTextFieldDeadline" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="jFormattedTextFielddeadline" min="-2" pref="25" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   <Component id="jLabelNotes" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
@@ -171,7 +171,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabelDeadline">
+        <Component class="javax.swing.JLabel" name="jLabeldeadline">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
@@ -205,15 +205,12 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JFormattedTextField" name="jFormattedTextFieldDeadline">
+        <Component class="javax.swing.JFormattedTextField" name="jFormattedTextFielddeadline">
           <Properties>
             <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
               <Format subtype="1" type="1"/>
             </Property>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jFormattedTextFieldDeadlineActionPerformed"/>
-          </Events>
         </Component>
       </SubComponents>
     </Container>
