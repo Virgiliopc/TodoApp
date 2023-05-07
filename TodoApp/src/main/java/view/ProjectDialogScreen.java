@@ -81,6 +81,8 @@ public class ProjectDialogScreen extends javax.swing.JDialog {
             .addComponent(jLabelToolbarSave, javax.swing.GroupLayout.DEFAULT_SIZE, 55, Short.MAX_VALUE)
         );
 
+        jPanelProject.setBackground(new java.awt.Color(255, 255, 255));
+
         jLabelName.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabelName.setText("Nome");
 

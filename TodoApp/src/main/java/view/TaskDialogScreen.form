@@ -109,10 +109,10 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Component id="jTextFieldName" max="32767" attributes="0"/>
               <Component id="jLabelName" alignment="0" max="32767" attributes="0"/>
-              <Component id="jTextFieldDescription" alignment="0" max="32767" attributes="0"/>
+              <Component id="jTextFieldDescription" alignment="0" min="-2" pref="380" max="-2" attributes="0"/>
               <Component id="jLabelDeadline" alignment="0" max="32767" attributes="0"/>
               <Component id="jLabelNotes" alignment="0" max="32767" attributes="0"/>
-              <Component id="jScrollPanenotes" alignment="0" pref="380" max="32767" attributes="0"/>
+              <Component id="jScrollPanenotes" alignment="0" max="32767" attributes="0"/>
               <Component id="jLabelDescription" alignment="0" max="32767" attributes="0"/>
               <Component id="jFormattedTextFieldDeadline" alignment="0" max="32767" attributes="0"/>
           </Group>
