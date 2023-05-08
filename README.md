@@ -1,66 +1,66 @@
 <p align="center">
-    <img src="./img/todoapp.png" max-width="800">    
-    <img src="./img/todoapp1.png" max-width="800">
-    <img src="./img/todoappproject.png" max-width="800">
-    <img src="./img/todoapptask.png" max-width="800">
+    <img src="./img/todoapp.png" max-width="600">    
+    <img src="./img/todoapp1.png" max-width="600">
+    <img src="./img/todoappproject.png" max-width="600">
+    <img src="./img/todoapptask.png" max-width="600">
 </p>
 
-# ?? TodoApp
-Aplicação para o gerenciamento de projetos e as tarefas envolvidas nesses projetos.
+# TodoApp
+Aplicaï¿½ï¿½o para o gerenciamento de projetos e as tarefas envolvidas nesses projetos.
 
-## ?? Objetivo
-Resolver a questão de organização de tarefas de um ou vários projetos.
+## Objetivo
+Resolver a questï¿½o de organizaï¿½ï¿½o de tarefas de um ou vï¿½rios projetos.
 
-## ?? Requisitos
-* A aplicação deve permitir criar, editar, excluir e buscar uma projeto (CRUD).
+## Requisitos
+* A aplicaï¿½ï¿½o deve permitir criar, editar, excluir e buscar uma projeto (CRUD).
 
-* A aplicação deve permitir criar, editar, excluir e buscar uma tarefa (CRUD).
+* A aplicaï¿½ï¿½o deve permitir criar, editar, excluir e buscar uma tarefa (CRUD).
 
-* A aplicação deve permitir criar, editar, excluir e buscar uma tag (CRUD).
+* A aplicaï¿½ï¿½o deve permitir criar, editar, excluir e buscar uma tag (CRUD).
 
-## ?? Regras de negócio
-- O sistema não contará com um sistema de login.
-- Não haverá o conceito de usuário.
+## Regras de negï¿½cio
+- O sistema nï¿½o contarï¿½ com um sistema de login.
+- Nï¿½o haverï¿½ o conceito de usuï¿½rio.
 - Toda tarefa deve pertencer a uma lista.
-- Não podem haver tags repetidas numa mesma tarefa.	
+- Nï¿½o podem haver tags repetidas numa mesma tarefa.	
 - Deve ser possivel filtrar as tarefas por tag.
 
-## ?? Entidades
+## Entidades
 
 ### Projeto
 - Nome
 - Tarefas
-- Data de Criação
-- Data de Atualização
+- Data de Criaï¿½ï¿½o
+- Data de Atualizaï¿½ï¿½o
 
 ### Tarefa
 - Nome
-- Descrição
+- Descriï¿½ï¿½o
 - Status
 - Tags
-- Observações
+- Observaï¿½ï¿½es
 - Prazo
-- Data de Criação
-- Data de Atualização
+- Data de Criaï¿½ï¿½o
+- Data de Atualizaï¿½ï¿½o
 
 ### Tag
 - Nome
 - Cor
-- Data de Criação
-- Data de Atualização
+- Data de Criaï¿½ï¿½o
+- Data de Atualizaï¿½ï¿½o
 
-## :seedling: ? Requisitos Mínimos
+## :seedling: ? Requisitos Mï¿½nimos
 
 Vontade de aprender.
 
-## :rocket: ?? Material de Referência e Tecnologias Utilizadas
+## :rocket: Material de Referï¿½ncia e Tecnologias Utilizadas
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 * Java 11
     * Java Swing
 * MySQL
-- Documentação das respectivas tecnologias. 
+- Documentaï¿½ï¿½o das respectivas tecnologias. 
 
 
 ## ? Let's code! ?
